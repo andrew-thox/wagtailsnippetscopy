@@ -10,8 +10,8 @@ from wagtail.admin.utils import (
     user_has_any_page_permission, user_passes_test, permission_denied)
 from wagtail.admin.views.pages import get_valid_next_url_from_request
 from wagtail.core import hooks
-from wagtail.wagtailsnippets.permissions import get_permission_name
-from wagtail.wagtailsnippets.views.snippets import get_snippet_model_from_url_params
+from wagtail.snippets.permissions import get_permission_name
+from wagtail.snippets.views.snippets import get_snippet_model_from_url_params
 
 from .forms import CopyForm
 from .registry import snippet_copy_registry
