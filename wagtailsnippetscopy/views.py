@@ -5,13 +5,13 @@ from django.contrib.admin.utils import quote
 from django.shortcuts import get_object_or_404, redirect, render
 from django.utils.translation import ugettext as _
 from wagtail.contrib.modeladmin.helpers import AdminURLHelper
-from wagtail.wagtailadmin import messages
-from wagtail.wagtailadmin.utils import (
+from wagtail.admin import messages
+from wagtail.admin.utils import (
     user_has_any_page_permission, user_passes_test, permission_denied)
-from wagtail.wagtailadmin.views.pages import get_valid_next_url_from_request
-from wagtail.wagtailcore import hooks
-from wagtail.wagtailsnippets.permissions import get_permission_name
-from wagtail.wagtailsnippets.views.snippets import get_snippet_model_from_url_params
+from wagtail.admin.views.pages import get_valid_next_url_from_request
+from wagtail.core import hooks
+from wagtail.snippets.permissions import get_permission_name
+from wagtail.snippets.views.snippets import get_snippet_model_from_url_params
 
 from .forms import CopyForm
 from .registry import snippet_copy_registry
